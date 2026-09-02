@@ -1,0 +1,38 @@
+{
+  "name": "genpark-agentic-interactive-bash-patch-synthesizer-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Agentic interactive bash patch synthesizer executing ACI commands to reproduce issues, locate code defects, and generate clean Git diffs.",
+  "author": "genpark",
+  "category": "software-engineering-agent",
+  "tags": [
+    "swe-agent",
+    "interactive-bash",
+    "diff-patch",
+    "bug-localization",
+    "aci-tools"
+  ],
+  "inputs": {
+    "issue_description": {
+      "type": "string"
+    },
+    "repo_directory_context": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "patch_session_id": {
+      "type": "string"
+    },
+    "interactive_actions_taken_count": {
+      "type": "integer"
+    },
+    "reproduced_unit_test_passed": {
+      "type": "boolean"
+    },
+    "patch_artifact_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
